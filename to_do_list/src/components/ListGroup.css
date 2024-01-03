@@ -12,10 +12,7 @@
 .borderless:hover{
     outline: none !important; 
 } 
-/* 
-*:focus {
-    outline: none;
-} */
+
 .form-control:active, .form-control:focus{
     outline: 2px solid blue !important;
     /* outline: none !important;  */
