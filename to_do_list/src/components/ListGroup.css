@@ -1,0 +1,8 @@
+.borderless{
+    border-top: none !important; 
+    border-left: none !important; 
+    border-right: none !important; 
+    border-bottom: 1px solid #0D6EFD !important; 
+    border-radius: 0 !important; 
+    outline: none !important; 
+}
