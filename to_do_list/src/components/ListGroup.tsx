@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./ListGroup.css";
 
 const ListGroup = () => {
+  let newListItems = ["Take a nap", "Go for a walk", "Training", "Prep dinner"];
+
   const [inputValue, setInputValue] = useState("");
   const [listItems, setListItems] = useState([]);
 
@@ -35,19 +37,26 @@ const ListGroup = () => {
             Add
           </button>
         </form>
-
-        <ul className="list-group">
-          {listItems.map((item, index) => (
-            <li className="list-group-item" key={index}>
-              {item}
-            </li>
-          ))}
-          {/* <li className="list-group-item">An item</li>
+        <div className="list-holder">
+          <ul className="list-group">
+            {listItems.map((item, index) => (
+              <li className="list-group-item" key={index}>
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label className="form-check-label labels">{item}</label>
+              </li>
+            ))}
+            {/* <li className="list-group-item">An item</li>
           <li className="list-group-item">A second item</li>
           <li className="list-group-item">A third item</li>
           <li className="list-group-item">A fourth item</li>
           <li className="list-group-item">And a fifth one</li> */}
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   );
