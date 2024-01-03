@@ -24,14 +24,14 @@ const ListGroup = () => {
 
         <form onSubmit={handleSubmit} className="d-flex mb-3" role="search">
           <input
-            className="form-control me-2 borderless"
+            className="me-2 borderless"
             type="search"
             value={inputValue}
             onChange={handleInputChange}
             placeholder="Add a new item"
             aria-label="Search"
           />
-          <button className="btn btn-primary" type="submit">
+          <button className="btn btn-light" type="submit">
             Add
           </button>
         </form>
