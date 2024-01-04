@@ -37,6 +37,9 @@ const ListGroup = () => {
             Add
           </button>
         </form>
+
+        {listItems.length === 0 ? <div>No list to show</div> : null}
+
         <div className="list-holder">
           <ul className="list-group">
             {listItems.map((item, index) => (
